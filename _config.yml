@@ -1,0 +1,20 @@
+# Site settings
+title: Xin Wang's Blog
+header-img: img/home-bg.jpg
+email: ericrussell@zju.edu.cn
+description: "The secret of getting ahead is getting started."
+baseurl: ""
+url: "http://ericalex.github.io/"
+twitter_username: 
+github_username:  EricAlex
+facebook_username:  
+weibo_username: 1816641837
+#douban_username: 61026889
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+gems: ["jekyll-paginate"]
