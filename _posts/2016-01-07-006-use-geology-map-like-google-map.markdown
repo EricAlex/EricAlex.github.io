@@ -45,7 +45,11 @@ I left geology maps as rasters and moved to the next step.</p>
 notice that normally you will find points at four corners where you can read their (longitude latitude). 
 Select the tool in georeferencing toolbar highlighed with red frame in Fig 2, left click on one of the (longitude latitude) known points, 
 then right click on it, select "Input X and Y", then enter its (longitude latitude). After processing all points with above procedures, 
+<<<<<<< HEAD
 click georeferencing:Update Georeferencing.</p>
+=======
+click georeferencing->Update Georeferencing.</p>
+>>>>>>> origin/master
 
 <a href="#">
     <img src="{{ site.baseurl }}/img/post-006/georeferencing.jpg" alt="Georeferencing">
