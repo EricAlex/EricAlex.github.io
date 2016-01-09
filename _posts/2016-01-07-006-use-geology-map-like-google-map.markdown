@@ -55,7 +55,7 @@ click georeferencing->Update Georeferencing.</p>
 <p>Adjacent geology maps' edges will overlap after georeferencing (Fig 3).</p>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/overlapping-edges.jpg" alt="Overlapping edges">
+    <img src="{{ site.baseurl }}/img/post-006/overlapping-edges.jpg" alt="Overlapping Edges">
 </a>
 <span class="caption text-muted">Figure 3. Overlapping edges of adjacent geology maps.</span>
 
