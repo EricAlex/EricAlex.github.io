@@ -4,7 +4,7 @@ title:      "Use geology maps like using Google Maps on your iPad"
 subtitle:   ""
 date:       2016-01-07 12:00:00
 author:     "Xin Wang"
-header-img: "img/post-006/bg.png"
+header-img: "img/post-006/bg.jpg"
 ---
 
 <p>Imagine you are doing geology surveys in the field, enjoying geology map services as powerful as Google Maps: 
@@ -28,12 +28,12 @@ from the Internet, no bother scan your geology maps. If you bought or borrowed y
 as the geology map of Sichuan Province's Dege County, China, shown bellow:</p>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/geology-map.png" alt="Geology Map">
+    <img src="{{ site.baseurl }}/img/post-006/geology-map.jpg" alt="Geology Map">
 </a>
 <span class="caption text-muted">Figure 1. Geology map of Dege County, Sichuan Province, China.</span>
 
 <p>Of course you can refine your scanned maps in GIS softwares, turn raster maps into vector maps, 
-turn informations on the map into well-orgnized Geo－spatial Databases, 
+turn informations on the map into well-orgnized Geo-spatial Databases, 
 on the database you can develop very high-level and powerful services. 
 But that cost a lot of energy, and money if you are developing it for commercial use. 
 I am positive it will be a good investment. Anyway, as I was not funded or encouraged, and I developed this for my own use, 
@@ -48,14 +48,14 @@ then right click on it, select "Input X and Y", then enter its < longitude latit
 click georeferencing->Update Georeferencing.</p>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/georeferencing.png" alt="Georeferencing">
+    <img src="{{ site.baseurl }}/img/post-006/georeferencing.jpg" alt="Georeferencing">
 </a>
 <span class="caption text-muted">Figure 2. Procedure of georeferencing geology maps.</span>
 
 <p>Adjacent geology maps' edges will overlap after georeferencing (Fig 3).</p>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/overlapping-edges.png" alt="Overlapping edges">
+    <img src="{{ site.baseurl }}/img/post-006/overlapping-edges.jpg" alt="Overlapping edges">
 </a>
 <span class="caption text-muted">Figure 3. Overlapping edges of adjacent geology maps.</span>
 
@@ -69,7 +69,7 @@ Include .tif as the extension of your output file.</p>
 <p>The final result so far looks like Fig 4.</p>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/edges-trimed.png" alt="Edges Trimed">
+    <img src="{{ site.baseurl }}/img/post-006/edges-trimed.jpg" alt="Edges Trimed">
 </a>
 <span class="caption text-muted">Figure 4. Overlapping edges were trimed off.</span>
 
@@ -79,7 +79,7 @@ Include .tif as the extension of your output file.</p>
 click add layer, browse and select geotiff maps, "SRS" select "WGS84", click "Save&Style".</p>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/import-to-tilemill.png" alt="Import to TileMill">
+    <img src="{{ site.baseurl }}/img/post-006/import-to-tilemill.jpg" alt="Import to TileMill">
 </a>
 <span class="caption text-muted">Figure 5. Importing maps into TileMill.</span>
 
@@ -105,7 +105,7 @@ zoom range, Centor and MetaTile size, the export extent and zoom range will deci
 you wouldn't like to store a 20G MBTiles file in your iPad.</p>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/export-map-data.png" alt="Export Map Data">
+    <img src="{{ site.baseurl }}/img/post-006/export-map-data.jpg" alt="Export Map Data">
 </a>
 <span class="caption text-muted">Figure 6. Exporting geology map service data: MbTiles.</span>
 
@@ -116,7 +116,7 @@ It is still being developed, as shown in Fig 7A and 7B. Maybe too simple,
 fancy features like tracing and marking locations are not included. But it will satisfy your basic usage.</p>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/large-scale-and-detailed-map.png" alt="Map on iPad">
+    <img src="{{ site.baseurl }}/img/post-006/large-scale-and-detailed-map.jpg" alt="Map on iPad">
 </a>
 <span class="caption text-muted">Figure 7. Using geology map service on iPad. A: Large scale view; B: Detailed view.</span>
 

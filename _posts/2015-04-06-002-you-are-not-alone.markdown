@@ -3,7 +3,7 @@ layout:     post
 title:      "Yes, you are not alone."
 date:       2015-04-06 12:00:00
 author:     "Xin Wang"
-header-img: "img/post-002/bg.png"
+header-img: "img/post-002/bg.jpg"
 ---
 
 <h2 class="section-heading">Scene one:</h2>
