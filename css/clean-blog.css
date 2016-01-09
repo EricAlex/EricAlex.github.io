@@ -395,3 +395,5 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}

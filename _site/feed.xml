@@ -5,270 +5,440 @@
     <description>The secret of getting ahead is getting started.</description>
     <link>http://ericalex.github.io//</link>
     <atom:link href="http://ericalex.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 07 Jan 2016 16:33:55 +0800</pubDate>
-    <lastBuildDate>Thu, 07 Jan 2016 16:33:55 +0800</lastBuildDate>
+    <pubDate>Sat, 09 Jan 2016 21:57:37 +0800</pubDate>
+    <lastBuildDate>Sat, 09 Jan 2016 21:57:37 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Man must explore, and this is exploration at its greatest</title>
-        <description>&lt;p&gt;Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman&#39;s earth, if free men make it, will be truly round: a globe in practice, not in theory.&lt;/p&gt;
+        <title>Use geology maps like using Google Maps on your iPad</title>
+        <description>&lt;p&gt;Imagine you are doing geology surveys in the field, enjoying geology map services as powerful as Google Maps: 
+locating yourself on the map, zooming in, zooming out, drawing lines to get the stratigraphic profile, 
+marking down a sampling site, taking a selfie with your rock sample, searching for nearby geologists, 
+making small talks online, sipping your ice cold beer (I&#39;m kidding, no beer provided).&lt;/p&gt;
 
-&lt;p&gt;Science cuts two ways, of course; its products can be used for both good and evil. But there&#39;s no turning back from science. The early warnings about technological dangers also come from science.&lt;/p&gt;
+&lt;p&gt;Well, this step-by-step post will walk you through making above imaginations come true.
+&lt;/p&gt;
 
-&lt;p&gt;What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.&lt;/p&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;Requirements&lt;/h2&gt;
 
-&lt;p&gt;A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That&#39;s how I felt seeing the Earth for the first time. I could not help but love and cherish her.&lt;/p&gt;
+&lt;p&gt;First you need a map scanner to digitize your geology maps.&lt;/p&gt;
+&lt;p&gt;You will need ArcGIS, QGIS or similar software to georeference your map and trim off overlapping edges.&lt;/p&gt;
+&lt;p&gt;You will need TileMill or Mapbox Studio to generate data for your geology map service, both offline and online.&lt;/p&gt;
 
-&lt;p&gt;For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.&lt;/p&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;Digitizing geology maps&lt;/h2&gt;
 
-&lt;h2 class=&quot;section-heading&quot;&gt;The Final Frontier&lt;/h2&gt;
-
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;blockquote&gt;The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.&lt;/blockquote&gt;
-
-&lt;p&gt;Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.&lt;/p&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Reaching for the Stars&lt;/h2&gt;
-
-&lt;p&gt;As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.&lt;/p&gt;
+&lt;p&gt;It depends on where you get your geology maps and the scale of your maps. If you downloaded your maps as *.jpeg, *.png, *.bmp, etc., 
+from the Internet, no bother scan your geology maps. If you bought or borrowed your paper maps, scan your maps, 
+as the geology map of Sichuan Province&#39;s Dege County, China, shown bellow:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;#&quot;&gt;
-    &lt;img src=&quot;/img/post-sample-image.jpg&quot; alt=&quot;Post Sample Image&quot; /&gt;
+    &lt;img src=&quot;/img/post-006/geology-map.png&quot; alt=&quot;Geology Map&quot; /&gt;
 &lt;/a&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;To go places and do things that have never been done before – that’s what living is all about.&lt;/span&gt;&lt;/p&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 1. Geology map of Dege County, Sichuan Province, China.&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.&lt;/p&gt;
+&lt;p&gt;Of course you can refine your scanned maps in GIS softwares, turn raster maps into vector maps, 
+turn informations on the map into well-orgnized Geo－spatial Databases, 
+on the database you can develop very high-level and powerful services. 
+But that cost a lot of energy, and money if you are developing it for commercial use. 
+I am positive it will be a good investment. Anyway, as I was not funded or encouraged, and I developed this for my own use, 
+I left geology maps as rasters and moved to the next step.&lt;/p&gt;
 
-&lt;p&gt;As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.&lt;/p&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;Georeferencing maps and triming edges&lt;/h2&gt;
 
-&lt;p&gt;Placeholder text by &lt;a href=&quot;http://spaceipsum.com/&quot;&gt;Space Ipsum&lt;/a&gt;. Photographs by &lt;a href=&quot;https://www.flickr.com/photos/nasacommons/&quot;&gt;NASA on The Commons&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Open ArcMap, add one piece of geology map, 
+notice that normally you will find points at four corners where you can read their &amp;lt; longitude latitude &amp;gt;. 
+Select the tool in georeferencing toolbar highlighed with red frame in Fig 2, left click on one of the &amp;lt; longitude latitude &amp;gt; known points, 
+then right click on it, select &quot;Input X and Y&quot;, then enter its &amp;lt; longitude latitude &amp;gt;. After processing all points with above procedures, 
+click georeferencing-&amp;gt;Update Georeferencing.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
+    &lt;img src=&quot;/img/post-006/georeferencing.png&quot; alt=&quot;Georeferencing&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 2. Procedure of georeferencing geology maps.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Adjacent geology maps&#39; edges will overlap after georeferencing (Fig 3).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
+    &lt;img src=&quot;/img/post-006/overlapping-edges.png&quot; alt=&quot;Overlapping edges&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 3. Overlapping edges of adjacent geology maps.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Edges should be trimed off when mosaicing these maps together.&lt;/p&gt;
+&lt;p&gt;Create new polygon shapefile and add it in, sketch a polygon that just covers the mapping boundary of the geology map. 
+Use this polygon clip the raster map: ArcToolbox-&amp;gt;Data Management Tools-&amp;gt;Raster-&amp;gt;Raster Processing-&amp;gt;Clip.&lt;/p&gt;
+&lt;p&gt;Define projection of the cliped map: ArcToolbox-&amp;gt;Data Management Tools-&amp;gt;Projections and Tranformations-&amp;gt;Define Projection. 
+Define it as &quot;WGS 1984 UTM Zone xx&quot;, according to its zone number.&lt;/p&gt;
+&lt;p&gt;Save the cliped and projection defined map as *.tif: ArcToolbox-&amp;gt;Data Management Tools-&amp;gt;Raster-&amp;gt;Raster Dataset-&amp;gt;Copy Raster. 
+Include .tif as the extension of your output file.&lt;/p&gt;
+&lt;p&gt;The final result so far looks like Fig 4.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
+    &lt;img src=&quot;/img/post-006/edges-trimed.png&quot; alt=&quot;Edges Trimed&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 4. Overlapping edges were trimed off.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 class=&quot;section-heading&quot;&gt;Importing geology maps to TileMill (or MapBox Studio)&lt;/h2&gt;
+
+&lt;p&gt;Import saved geotiff maps into TileMill: open TileMill, new Project and name it, click the tool highlighted with red frame in Fig 5, 
+click add layer, browse and select geotiff maps, &quot;SRS&quot; select &quot;WGS84&quot;, click &quot;Save&amp;amp;Style&quot;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
+    &lt;img src=&quot;/img/post-006/import-to-tilemill.png&quot; alt=&quot;Import to TileMill&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 5. Importing maps into TileMill.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 class=&quot;section-heading&quot;&gt;Rendering your maps&lt;/h2&gt;
+
+&lt;p&gt;As the right side column of Fig 5 shows, you can edit the script that describe the render style of your maps. 
+There is detailed documentation of TileMill tells you how to do it. Fell free to customize your geology maps.&lt;/p&gt;
+
+&lt;p&gt;Of course you can add other vector layers: roads, villages, the faults that you are studying, previous field trips&#39; traces, 
+previous sampling sites. The only limitation is your imagination.&lt;/p&gt;
+
+&lt;p&gt;It is better to collect geology maps with different scales of the same region, as 1:1,000,000, 1:500,000, 1:200,000, etc. 
+In TileMill you can set different scale maps to appear in different zoom level ranges 
+(If you are familiar with the comcept of raster pyramids in ArcGIS and zoom level of Google Maps). 
+So you can control what kind of details will appear at different zoom level (scale).&lt;/p&gt;
+
+&lt;h2 class=&quot;section-heading&quot;&gt;Exporting your geology map service data&lt;/h2&gt;
+
+&lt;p&gt;After you add all features that you wanted and are satisfied with your map, 
+you can export your geology map service data and release your service now. Click Export-&amp;gt;MBTiles, then Fig 6 will appear, 
+you can resize and drag the rectangle to set the extent of your export region, there are other parameters you can set: 
+zoom range, Centor and MetaTile size, the export extent and zoom range will decide the size of your output file, so set them carefully, 
+you wouldn&#39;t like to store a 20G MBTiles file in your iPad.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
+    &lt;img src=&quot;/img/post-006/export-map-data.png&quot; alt=&quot;Export Map Data&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 6. Exporting geology map service data: MbTiles.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 class=&quot;section-heading&quot;&gt;Using your geology map service on iPad&lt;/h2&gt;
+
+&lt;p&gt;There are several Apps for iPad to view MBTiles file, MBTiles GPS is a free and simple one. 
+It is still being developed, as shown in Fig 7A and 7B. Maybe too simple, 
+fancy features like tracing and marking locations are not included. But it will satisfy your basic usage.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
+    &lt;img src=&quot;/img/post-006/large-scale-and-detailed-map.png&quot; alt=&quot;Map on iPad&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 7. Using geology map service on iPad. A: Large scale view; B: Detailed view.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to release your geology map services online, you may need &lt;a href=&quot;https://www.mapbox.com/&quot;&gt;Mapbox&lt;/a&gt;&#39;s service. 
+They made it very simple and convenient for you.&lt;/p&gt;
+
+&lt;p&gt;If you want your geology map services to have fancy features, you may need to develop your own Apps. 
+Again you can use Map App framework provided by &lt;a href=&quot;https://www.mapbox.com/&quot;&gt;Mapbox&lt;/a&gt;, 
+both for iOS (&lt;a href=&quot;https://www.mapbox.com/ios-sdk/&quot;&gt;Mapbox iOS SDK&lt;/a&gt;) 
+and Android (&lt;a href=&quot;https://www.mapbox.com/android-sdk/&quot;&gt;Mapbox Android SDK&lt;/a&gt;).&lt;/p&gt;
 </description>
-        <pubDate>Wed, 24 Sep 2014 20:00:00 +0800</pubDate>
-        <link>http://ericalex.github.io//2014/09/24/man-must-explore/</link>
-        <guid isPermaLink="true">http://ericalex.github.io//2014/09/24/man-must-explore/</guid>
+        <pubDate>Thu, 07 Jan 2016 20:00:00 +0800</pubDate>
+        <link>http://ericalex.github.io//2016/01/07/006-use-geology-map-like-google-map/</link>
+        <guid isPermaLink="true">http://ericalex.github.io//2016/01/07/006-use-geology-map-like-google-map/</guid>
         
         
       </item>
     
       <item>
-        <title>I believe every human has a finite number of heartbeats. I don&#39;t intend to waste any of mine.</title>
-        <description>&lt;p&gt;Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman&#39;s earth, if free men make it, will be truly round: a globe in practice, not in theory.&lt;/p&gt;
+        <title>Structrock: a cross-platform outcrop point cloud processing system</title>
+        <description>&lt;h1 id=&quot;structrock&quot;&gt;Structrock&lt;/h1&gt;
 
-&lt;p&gt;Science cuts two ways, of course; its products can be used for both good and evil. But there&#39;s no turning back from science. The early warnings about technological dangers also come from science.&lt;/p&gt;
+&lt;p&gt;A cross-platform outcrop point cloud processing system,
+capable of acquiring fracture data on suppositional planes cutting through digital outcrop models (DOMs).&lt;/p&gt;
 
-&lt;p&gt;What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.&lt;/p&gt;
+&lt;p&gt;Structrock is released under the terms of the BSD license, and thus free for commercial and research use.
+Feel free to analyze your own outcrop point cloud data, to add Structrock into your own project.
+You are welcomed to make contributions to this project. Email ericrussell@zju.edu.cn, or open an issue here on GitHub for support.&lt;/p&gt;
 
-&lt;p&gt;A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That&#39;s how I felt seeing the Earth for the first time. I could not help but love and cherish her.&lt;/p&gt;
+&lt;h2 id=&quot;dependencies&quot;&gt;Dependencies&lt;/h2&gt;
 
-&lt;p&gt;For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.&lt;/p&gt;
+&lt;h3 id=&quot;point-cloud-library-pcl&quot;&gt;Point Cloud Library (PCL)&lt;/h3&gt;
 
-&lt;h2 class=&quot;section-heading&quot;&gt;The Final Frontier&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://pointclouds.org/&quot;&gt;PCL&lt;/a&gt; is a standalone, large scale, open project for 2D/3D image and point cloud processing.
+And its &lt;a href=&quot;https://github.com/PointCloudLibrary/pcl&quot;&gt;Github repository&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
+&lt;p&gt;Version required: 1.6, still having compatibility problems with versions &amp;gt; 1.6.&lt;/p&gt;
 
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
+&lt;h3 id=&quot;qt&quot;&gt;Qt&lt;/h3&gt;
 
-&lt;blockquote&gt;The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.qt.io/&quot;&gt;Qt&lt;/a&gt; is a cross-platform C++ application development framework.&lt;/p&gt;
 
-&lt;p&gt;Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.&lt;/p&gt;
+&lt;p&gt;Version required: &amp;gt;= 4.8.&lt;/p&gt;
 
-&lt;h2 class=&quot;section-heading&quot;&gt;Reaching for the Stars&lt;/h2&gt;
+&lt;h2 id=&quot;functions&quot;&gt;Functions&lt;/h2&gt;
 
-&lt;p&gt;As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.&lt;/p&gt;
+&lt;p&gt;Structrock provide a platform on which workflows of processing outcrop point clouds can be designed.
+A special algorithm to identify and segment fracture faces is implemented.
+Algorithm of restoring a suppositional plane cutting through digital outcrop models (DOMs) is implemented.
+Fracture data are acquired from DOMs and displayed.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
-    &lt;img src=&quot;/img/post-sample-image.jpg&quot; alt=&quot;Post Sample Image&quot; /&gt;
-&lt;/a&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;To go places and do things that have never been done before – that’s what living is all about.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Structrock can run in both GUI and command-line modes.
+In GUI mode, users interact with Structrock to perform certain processing action and provide processing parameters through input dialogs.
+In command-line mode, Structrock receive the path to a text file that contains processing action and parameters, separated with “;”.
+It will do these processing actions one by one until the end or errors occur.&lt;/p&gt;
 
-&lt;p&gt;Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.&lt;/p&gt;
+&lt;h2 id=&quot;build-from-source&quot;&gt;Build from source&lt;/h2&gt;
 
-&lt;p&gt;As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.&lt;/p&gt;
+&lt;p&gt;First, all dependencies, PCL(1.6), Qt, boost, Eigen, FLANN, VTK, QHull and OpenNI should be installed properly.&lt;/p&gt;
 
-&lt;p&gt;Placeholder text by &lt;a href=&quot;http://spaceipsum.com/&quot;&gt;Space Ipsum&lt;/a&gt;. Photographs by &lt;a href=&quot;https://www.flickr.com/photos/nasacommons/&quot;&gt;NASA on The Commons&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Download and install &lt;a href=&quot;https://cmake.org/&quot;&gt;CMake&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Make a new folder named “build” beside the folder containing source files (call it, say, “src”).&lt;/p&gt;
+
+&lt;h3 id=&quot;on-windows&quot;&gt;On Windows&lt;/h3&gt;
+
+&lt;p&gt;Make sure Visual Studio 2010 is properly installed.
+Open CMake, set “Where is the source code” to the path to “src” and set “Where to build the binary” to the path to “build”.
+Click “Configure”, and select Visual Studio 10 2010, if no errors occur, click “Generate”.
+Open generated “structrock.sln” file, set “structrock” as the “StartUp Project”,
+add “/ENTRY:mainCRTStartup” to “structrock”’s “Linker-&amp;gt;Command Line” properties, start compilation.&lt;/p&gt;
+
+&lt;h3 id=&quot;on-linux&quot;&gt;On Linux&lt;/h3&gt;
+
+&lt;p&gt;Open terminal window, go to “build” folder, run “cmake ../src”, then run “make”.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 18 Sep 2014 20:00:00 +0800</pubDate>
-        <link>http://ericalex.github.io//2014/09/18/i-believe/</link>
-        <guid isPermaLink="true">http://ericalex.github.io//2014/09/18/i-believe/</guid>
+        <pubDate>Fri, 25 Dec 2015 20:00:00 +0800</pubDate>
+        <link>http://ericalex.github.io//2015/12/25/005-structrock/</link>
+        <guid isPermaLink="true">http://ericalex.github.io//2015/12/25/005-structrock/</guid>
         
         
       </item>
     
       <item>
-        <title>Science has not yet mastered prophecy</title>
-        <description>&lt;p&gt;Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman&#39;s earth, if free men make it, will be truly round: a globe in practice, not in theory.&lt;/p&gt;
+        <title>Shannon-Kotel’nikov Mappings in Joint Source-Channel Coding: a Simulation using MATLAB</title>
+        <description>&lt;h2 class=&quot;section-heading&quot;&gt;1 Introduction&lt;/h2&gt;
 
-&lt;p&gt;Science cuts two ways, of course; its products can be used for both good and evil. But there&#39;s no turning back from science. The early warnings about technological dangers also come from science.&lt;/p&gt;
+&lt;p&gt;When transmitting analog source signals like images and sound over waveform channels, the most common approach is to use separate source and channel coders. Separation of source and channel was proven to be optimal by Shannon [1]. However, the price to pay to achieve near- optimality involve very high encoding/decoding complexity, significant delays, specific design for desired rate/distortion and threshold effect: lack of robustness to small changes in parameters. So in practice, digital systems based on joint source-channel coding (general transformation) may have performance advantages when complexity is constrained. Shannon-Kotel’nikov mapping is a kind of non-linear transformation which can provide both bandwidth reduction and bandwidth expansion.&lt;/p&gt;
 
-&lt;p&gt;What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.&lt;/p&gt;
+&lt;p&gt;Shannon-Kotel’nikov mappings are related to channeloptimized vector quantizers as devel- oped by Vaishampayan [2]. As opposed to quantizing the source and thereby creating a discrete set of representation points which are then mapped onto the channel, the Shannon-Kotel’nikov mappings perform either a projection of the source onto a lower dimensional subset (lossy com- pression), or map the source into a higher dimensional space (error control) [3].&lt;/p&gt;
 
-&lt;p&gt;A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That&#39;s how I felt seeing the Earth for the first time. I could not help but love and cherish her.&lt;/p&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;2 Simulation&lt;/h2&gt;
 
-&lt;p&gt;For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.&lt;/p&gt;
+&lt;p&gt;This report performed simulation of 2:1 Bandwidth Reduction with the Archimedes’ Spiral (as shown in Figure 1) suing MATLAB with methods described in [3]. The simulation is performed for a image signal source as shown in Figure 2(a) and an additive white Gaussian noise (AWGN) channel. A factor-two bandwidth reduction, or compression, is achieved by combining two consecutive samples using a non-linear mapping.&lt;/p&gt;
 
-&lt;h2 class=&quot;section-heading&quot;&gt;The Final Frontier&lt;/h2&gt;
+&lt;p&gt;We perform the bandwidth reduction by transmitting a combination of two source samples \( x_1 \) and \( x_2 \) as one channel sample \( y \). This is achieved by first approximating a point in \( R^2 \) to the closest point on the double Archimedes&#39; spirals. The spirals can be described parametrically as,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\[
+x_1 = 2 \Delta \frac{\theta}{2 \pi} \cos (\theta),x_2 = 2 \Delta \frac{\theta}{2 \pi} \sin (\theta)
+\]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\[
+x_1 = 2 \Delta \frac{\theta}{2 \pi} \cos (\theta + \pi),x_2 = 2 \Delta \frac{\theta}{2 \pi} \sin (\theta + \pi)
+\]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;As MATLAB code bellow described, the projection can be achieved by&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\[
+  \hat \theta = \mathop{argmin}_{\theta}{\{(x_1 \pm \frac{\Delta}{\pi}\theta\sin \theta)^2 + (x_2 - \frac{\Delta}{\pi}\theta\cos \theta)^2\}}
+\]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The projected point is still 2-dimension, but can be compressed into 1-dimension \(y\) by&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\[
+  y = l_{\pm}(r) = \pm \zeta (\frac{\pi}{\Delta})^2 r^2
+\]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;where \(+\) represents points residing on the blue line and the \(-\) represents points residing on the the red lines in Figure 1. \(r= \frac{\Delta}{\pi}\theta\) and the parameter \(\zeta = \eta \Delta = 0.16 \Delta\) makes this operator an approximation of the length along the spiral. This expression is found by using a nonlinear curve fit on the expression of the true arc length&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\[
+  l(r)_s = \frac{1}{2}(r\sqrt{1 + (\frac{\pi}{\Delta}r)^2} + \frac{\Delta}{\pi} \sinh^{-1} (\frac{\pi}{\Delta}r))
+\]&lt;/code&gt;
+&lt;a href=&quot;#&quot;&gt;
+    &lt;img src=&quot;/img/post-004/spiral-mapping.png&quot; alt=&quot;Spiral mapping&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 1. Spiral mapping.&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;c&quot;&gt;%% spiral curve mapping and transform to 1 dimension&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_length&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;theta_max&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delta_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;% max theta of spiral curve calculated from the max radius 255/2&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;spiral_length&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yita&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;^&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delta_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delta_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta_max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;^&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;% array of spiral curve length used to calculate points (x, y) on the curve&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;spiral_theta&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spiral_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;./&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yita&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delta_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;% array of theta calculated from spiral_length&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;spiral_x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delta_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spiral_theta&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spiral_theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;% array of x component of points&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;spiral_y&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delta_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spiral_theta&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spiral_theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;% array of y component of points&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;signal_length&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spiral_x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;source_signal_one&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.^&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spiral_y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;source_signal_two&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.^&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;% distance from given point to spiral curve points&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;min_pos&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;% find the min distance, i.e., mapping given point onto curve&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yita&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;^&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delta_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delta_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spiral_theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min_pos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;^&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;% calculate curve length of mapped point for signal transmission&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
+&lt;p&gt;As described in [3], when optimizing the spiral mapping, the goal is to find the \(\Delta\) that minimizes the total distortion&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\[
+  \Delta_{opt} = 2\pi\sigma_x\sqrt[4]{\frac{6 \cdot \eta^2}{CSNR}}
+\]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The decoded SNR is given by (as described in [3])&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\[
+  SNR = \frac{\sqrt{6}}{2\cdot0.16\cdot\pi^2}\sqrt{CSNR}
+\]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;and the Optimal Performance Theoretically Attainable (OPTA) for the $2:1$ case is given by \(SNR = \sqrt{1+CSNR}\).&lt;/p&gt;
 
-&lt;blockquote&gt;The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.&lt;/blockquote&gt;
+&lt;p&gt;White Gaussian noises were added to the signal as passing through the channel, as MATLAB code described bellow.&lt;/p&gt;
 
-&lt;p&gt;Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;c&quot;&gt;%% signal pass though noisy channel&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_length&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;signal_length&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;variance_std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CSNR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;randn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;% add white noise of channel&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h2 class=&quot;section-heading&quot;&gt;Reaching for the Stars&lt;/h2&gt;
+&lt;p&gt;Using the inverse operation of \(l(r)\), the received signal can be decoded as described in MATLAB code bellow:&lt;/p&gt;
 
-&lt;p&gt;As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;c&quot;&gt;%% decoding signal&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_length&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;signal_length&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yita&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delta_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;% decode theta from curve length&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;decode_signal_one&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delta_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;% 1D to 2D: x1 component&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;decode_signal_two&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delta_opt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;% 1D to 2D: x2 component&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;MATLAB code bellow calculated SNRs of simulated result.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;c&quot;&gt;%% SNR of simulation&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;SNR&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_length&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sample_image&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decode_signal_one&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sample_image&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;reshape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sample_image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sample_image&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;SNR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;log10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;signal_power&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.^&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))));&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 class=&quot;section-heading&quot;&gt;3 Results and Discussion&lt;/h2&gt;
+
+&lt;p&gt;The results of 2:1 Bandwidth Reduction with the Archimedes’ Spiral simulation are shown in Figure 2 and Figure 3. Figure 2 (a), (b), (c) and (d) are the original image, reconstructed image with CSNR = 30db, 16dB and 4dB separately.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
+    &lt;img src=&quot;/img/post-004/results.png&quot; alt=&quot;Results&quot; /&gt;
+&lt;/a&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 2. (a) Original image (b) Reconstructed image with CSNR = 30dB (c) Reconstructed image with CSNR = 16dB (d) Reconstructed image with CSNR = 4dB.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;As calculated, the system has an SNR only \(\sqrt{6}/\pi = 1.1\) dB away from OPTA, which is shown clearly in the Figure 3. Limited by methods used in the MATLAB simulation, the performance is different from the SNR calculated, better or worse. As we can see, as CSNR increase from 20 to 30, the simulation results were narrowly worse than the results of calculation, which may be limited by some method used in the simulation. Further research should be focusing on this.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;#&quot;&gt;
-    &lt;img src=&quot;/img/post-sample-image.jpg&quot; alt=&quot;Post Sample Image&quot; /&gt;
+    &lt;img src=&quot;/img/post-004/opta.png&quot; alt=&quot;OPTA&quot; /&gt;
 &lt;/a&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;To go places and do things that have never been done before – that’s what living is all about.&lt;/span&gt;&lt;/p&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 3. Optimal performance theoretically attainable (OPTA).&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.&lt;/p&gt;
-
-&lt;p&gt;As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.&lt;/p&gt;
-
-&lt;p&gt;Placeholder text by &lt;a href=&quot;http://spaceipsum.com/&quot;&gt;Space Ipsum&lt;/a&gt;. Photographs by &lt;a href=&quot;https://www.flickr.com/photos/nasacommons/&quot;&gt;NASA on The Commons&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;References&lt;/h2&gt;
+&lt;p&gt;[1] C. E. Shannon, A mathematical theory of communication. The Bell System Technical J., vol. 27, pp. 379-423, 1948&lt;/p&gt;
+&lt;p&gt;[2] V. A. Vaishampayan. Combined source-channel coding for bandlimited waveform channels. Ph.D. dissertation. University of Maryland. 1989.&lt;/p&gt;
+&lt;p&gt;[3] Fredrik Hekland, Pal Anders Floor and Tor A. Ramstad. Shannon-Kotel’nikov Mappings in Joint Source-Channel Coding. IEEE TRANSACTIONS ON COMMUNICATIONS. VOL. 57, NO. 1, JANUARY 2009.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 24 Aug 2014 20:00:00 +0800</pubDate>
-        <link>http://ericalex.github.io//2014/08/24/science-has-not-yet-mastered-prophecy/</link>
-        <guid isPermaLink="true">http://ericalex.github.io//2014/08/24/science-has-not-yet-mastered-prophecy/</guid>
+        <pubDate>Thu, 24 Dec 2015 20:00:00 +0800</pubDate>
+        <link>http://ericalex.github.io//2015/12/24/004-shannon-kotelnikov-simulation/</link>
+        <guid isPermaLink="true">http://ericalex.github.io//2015/12/24/004-shannon-kotelnikov-simulation/</guid>
         
         
       </item>
     
       <item>
-        <title>Failure is not an option</title>
-        <description>&lt;p&gt;Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman&#39;s earth, if free men make it, will be truly round: a globe in practice, not in theory.&lt;/p&gt;
+        <title>无知、歪曲、自大与情感处理</title>
+        <description>&lt;p&gt;无知是什么？是那些回答“不知道”的人？恰恰相反，无知的人会匆忙接受一个复杂问题的错误答案。他们意识不到那些答案的荒谬，也就绝不可能找到真正的答案。
+他们中想像力强的会凭空臆想出一个答案，想象力弱的则接受别人的。所依无知的人从来不缺“答案”，也从来不觉得自己无知。智慧便从此中产生，
+如哲学之父苏格拉底所谓“智慧是体悟的自己的无知”。&lt;/p&gt;
 
-&lt;p&gt;Science cuts two ways, of course; its products can be used for both good and evil. But there&#39;s no turning back from science. The early warnings about technological dangers also come from science.&lt;/p&gt;
+&lt;p&gt;无知的人虽然缺乏认知并探索复杂问题答案的能力，可以想见满脑子荒谬的人拥有惊人的歪曲的能力。如果不是在现实中时常碰到他们的“答案”解决不了的问题，
+他们真的能自大到天上去。加上如果生活在特权制造的泡泡中，无可救药的自大狂便产生了。&lt;/p&gt;
 
-&lt;p&gt;What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.&lt;/p&gt;
-
-&lt;p&gt;A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That&#39;s how I felt seeing the Earth for the first time. I could not help but love and cherish her.&lt;/p&gt;
-
-&lt;p&gt;For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.&lt;/p&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;The Final Frontier&lt;/h2&gt;
-
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;blockquote&gt;The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.&lt;/blockquote&gt;
-
-&lt;p&gt;Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.&lt;/p&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Reaching for the Stars&lt;/h2&gt;
-
-&lt;p&gt;As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
-    &lt;img src=&quot;/img/post-sample-image.jpg&quot; alt=&quot;Post Sample Image&quot; /&gt;
-&lt;/a&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;To go places and do things that have never been done before – that’s what living is all about.&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.&lt;/p&gt;
-
-&lt;p&gt;As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.&lt;/p&gt;
-
-&lt;p&gt;Placeholder text by &lt;a href=&quot;http://spaceipsum.com/&quot;&gt;Space Ipsum&lt;/a&gt;. Photographs by &lt;a href=&quot;https://www.flickr.com/photos/nasacommons/&quot;&gt;NASA on The Commons&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;(-情感处理部分稍后补上-)&lt;/p&gt;
 </description>
-        <pubDate>Tue, 08 Jul 2014 20:00:00 +0800</pubDate>
-        <link>http://ericalex.github.io//2014/07/08/failure-is-not-an-option/</link>
-        <guid isPermaLink="true">http://ericalex.github.io//2014/07/08/failure-is-not-an-option/</guid>
+        <pubDate>Wed, 23 Dec 2015 20:00:00 +0800</pubDate>
+        <link>http://ericalex.github.io//2015/12/23/003-ignorance-and-arrogance/</link>
+        <guid isPermaLink="true">http://ericalex.github.io//2015/12/23/003-ignorance-and-arrogance/</guid>
         
         
       </item>
     
       <item>
-        <title>The dreams of yesterday are the hopes of today and the reality of tomorrow.</title>
-        <description>&lt;p&gt;Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman&#39;s earth, if free men make it, will be truly round: a globe in practice, not in theory.&lt;/p&gt;
+        <title>Yes, you are not alone.</title>
+        <description>&lt;h2 class=&quot;section-heading&quot;&gt;Scene one:&lt;/h2&gt;
+&lt;p&gt;Can&#39;t even express herself clearly, but finally, 
+she convinced herself by recalling a lot of irrelevant &quot;examples&quot; and by repeating her irrelevant and absurd points.&lt;/p&gt;
 
-&lt;p&gt;Science cuts two ways, of course; its products can be used for both good and evil. But there&#39;s no turning back from science. The early warnings about technological dangers also come from science.&lt;/p&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;Scene two:&lt;/h2&gt;
+&lt;p&gt;&quot;So, the new comer, what do you think so far, about what you&#39;ve listened in this course?&quot;&lt;/p&gt;
+&lt;p&gt;&quot;I have not done enough research about you before this class. So can I ask you some questions first?&quot;&lt;/p&gt;
+&lt;p&gt;&quot;Sure.&quot;&lt;/p&gt;
+&lt;p&gt;&quot;Are you a successful man? Because you see, if I want to become successful, 
+I should only listen to a successful man and I mustn&#39;t hear a word from a unsuccessful man. 
+everything related to the unsuccessful man can be the reason why he is not successful. I can not tell right from wrong and I needn&#39;t, 
+the easiest way is following a successful man&#39;s steps, right? I can give a lot of examples of successful man or woman, 
+big movie or TV Show stars, singers, young famous writers, businessman with great fortune, politicians with great power, even corrupt ones. 
+A successful man is always right even I can&#39;t tell why, because I am too exited to think anything other than his great success. 
+A unsuccessful man is always wrong even I can&#39;t tell why, 
+because there is an old saying that the reason why a unsuccessful man is unsuccessful must lay in himself. 
+I can&#39;t tell whether the old saying is right or wrong, but old saying is old saying, right? 
+It survived successfully through time and it was said so many times that it became the truth. So I believe it. 
+Actually I don&#39;t care about the truth, it will cost me too much time to think, why not use the time to pursuit my success? 
+So I think that thinking is the biggest enemy of success and happiness. Do you know what I learned from the successful man? 
+Do not think, just pursuit your success and happiness. Do you know my definition  of happiness? Eat and sleep happily like a pig. 
+Maybe &#39;pig&#39; is not the most proper term for this, but I don&#39;t care. Though I don&#39;t know how to tell right from wrong, 
+I know how to tell successful man from unsuccessful man in most occasions. 
+I can even predict one men&#39;s success using my knowledge of psychology. Yes you heard me, I know psychology, 
+I even created a term named &quot;Psychological strong&quot; but left it undefined so I can use it wherever I want. 
+Those who dressed well and can&#39;t stop talking, no matter right or wrong, shows good EQ and &quot;Psychological strong&quot;, successful man! 
+or at least will be successful! Talking about terms, I bet you can&#39;t create more terms than I did. Oh! Talking so much about &quot;successful&quot;, 
+I didn&#39;t defined it yet, did I? I like money, power and material enjoyment, to be frank. 
+So my definition of success will be a lot of money and material enjoyment and great power.&quot;&lt;/p&gt;
+&lt;p&gt;&quot;Oh, I see, to answer your question, the success course is next door.&quot;&lt;/p&gt;
 
-&lt;p&gt;What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.&lt;/p&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;Scene three:&lt;/h2&gt;
+&lt;p&gt;In fact, she is so good at convincing herself that all she has to do is pretending she is convinced emotionally. 
+And that is what she called &quot;Psychological strong&quot;.&lt;/p&gt;
 
-&lt;p&gt;A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That&#39;s how I felt seeing the Earth for the first time. I could not help but love and cherish her.&lt;/p&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;Scene four:&lt;/h2&gt;
+&lt;p&gt;No foreground performance, no strategy behind the scene, just silly weird acting. How ignorant and shameless.&lt;/p&gt;
 
-&lt;p&gt;For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.&lt;/p&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;Scene five:&lt;/h2&gt;
+&lt;p&gt;Sina killed himself when swabbing his rifles.&lt;/p&gt;
 
-&lt;h2 class=&quot;section-heading&quot;&gt;The Final Frontier&lt;/h2&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;Scene six:&lt;/h2&gt;
+&lt;p&gt;She was expecting applause when showing her ignorance, but she didn&#39;t asked herself why should people applause for that. 
+She always forget questioning herself anything, let alone questioning others. 
+But she laughed and was amused by acting like a fool and hoped to amuse partners walking along with her. 
+Her partners indeed laughed thinking showing ignorance is a gesture less aggressive. That is what her friendship based on.&lt;/p&gt;
 
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;blockquote&gt;The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.&lt;/blockquote&gt;
-
-&lt;p&gt;Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.&lt;/p&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Reaching for the Stars&lt;/h2&gt;
-
-&lt;p&gt;As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
-    &lt;img src=&quot;/img/post-sample-image.jpg&quot; alt=&quot;Post Sample Image&quot; /&gt;
-&lt;/a&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;To go places and do things that have never been done before – that’s what living is all about.&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.&lt;/p&gt;
-
-&lt;p&gt;As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.&lt;/p&gt;
-
-&lt;p&gt;Placeholder text by &lt;a href=&quot;http://spaceipsum.com/&quot;&gt;Space Ipsum&lt;/a&gt;. Photographs by &lt;a href=&quot;https://www.flickr.com/photos/nasacommons/&quot;&gt;NASA on The Commons&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 class=&quot;section-heading&quot;&gt;Scene seven:&lt;/h2&gt;
+&lt;p&gt;We&#39;ve heard a lot of dogs&#39; barking, especially when they are herded together. But deep inside, we wish to see their bite skills, 
+as ancient Romans did, if our barbarous part haven&#39;t died out yet.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 01 Jul 2014 20:00:00 +0800</pubDate>
-        <link>http://ericalex.github.io//2014/07/01/dreams/</link>
-        <guid isPermaLink="true">http://ericalex.github.io//2014/07/01/dreams/</guid>
+        <pubDate>Mon, 06 Apr 2015 20:00:00 +0800</pubDate>
+        <link>http://ericalex.github.io//2015/04/06/002-you-are-not-alone/</link>
+        <guid isPermaLink="true">http://ericalex.github.io//2015/04/06/002-you-are-not-alone/</guid>
         
         
       </item>
     
       <item>
-        <title>Dinosaurs are extinct today</title>
-        <description>&lt;p&gt;Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman&#39;s earth, if free men make it, will be truly round: a globe in practice, not in theory.&lt;/p&gt;
+        <title>割裂与统一</title>
+        <description>&lt;p&gt;冯友兰先生曾经说过（大概意思），西方哲学是通过肯定的方式发展的，即如果A成立，那么就可以说B，继而C。而中国哲学则是通过否定的方式发展的，即A非B，同时C也不可得兼。
+但都须是理性的，是思辨的，否则恐难称之为哲学。哥德尔已经证明，人类的任何逻辑系统不可能同时具备完备性和正确性。逻辑系统和哲学系统的类比可能很唐突，很不恰当。
+但是否可以说西方哲学试图建立正确性，而中国哲学试图建立完备性？或者总体上存在这种趋势？&lt;/p&gt;
 
-&lt;p&gt;Science cuts two ways, of course; its products can be used for both good and evil. But there&#39;s no turning back from science. The early warnings about technological dangers also come from science.&lt;/p&gt;
+&lt;p&gt;否定方式的哲学需要极高的天才与悟性。“天地不仁，以万物为刍狗；圣人不仁，以百姓为刍狗。”后世再也没有超越老聃的哲学家了。&lt;/p&gt;
 
-&lt;p&gt;What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.&lt;/p&gt;
+&lt;p&gt;古希腊的哲学则显得“健康”“阳光”一些，苏格拉底比别人聪明，原因是他知道自己一无所知，而其他人不知道自己的无知。肯定式的哲学是以逻辑和思辨建立在“一无所知”上的。&lt;/p&gt;
 
-&lt;p&gt;A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That&#39;s how I felt seeing the Earth for the first time. I could not help but love and cherish her.&lt;/p&gt;
+&lt;p&gt;与其说是哲学主张，不如说是一种信念，我觉得事物应该是统一，在逻辑上内恰而不悖的。因为在理性的前提下，那些人类的逻辑系统不能够揭示的真理，也是人类所不能理性地理解的。
+因此人类的逻辑系统应该是统一和内恰的。现代科学正是如此，如果理论系统内部存在相互矛盾，那么整个系统将会崩塌；爱因斯坦在其科学研究中持着类似信念，
+晚年把全部的精力用来探索宇宙统一场，认为这是物理学的唯一方向。&lt;/p&gt;
 
-&lt;p&gt;For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.&lt;/p&gt;
+&lt;p&gt;同样，我认为事物不应该进行人为割裂。人类的知识不应该人为割裂成文或理；一个人的思想不应该割裂成不想调和的部分；一个人的思想和行为不应该割裂，即使其思想本身是矛盾的。
+就像孔丘虽然未达到思想上的统一内恰（他有自相矛盾的地方，但是他“聪明”地进行了粉饰），但其依然注重思想与行为的统一。&lt;/p&gt;
 
-&lt;h2 class=&quot;section-heading&quot;&gt;The Final Frontier&lt;/h2&gt;
+&lt;p&gt;如果不保持思想上的统一内恰，形成“自由之思想，独立之人格”，会使一个人前后矛盾，毫无原则，不辨是非，盲目服从，思维阻滞，贪图享乐，甚至多重人格。当今之世，此种人多矣！
+姑且称之为哲学思维无力综合症吧。&lt;/p&gt;
 
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;p&gt;There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.&lt;/p&gt;
-
-&lt;blockquote&gt;The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.&lt;/blockquote&gt;
-
-&lt;p&gt;Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.&lt;/p&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Reaching for the Stars&lt;/h2&gt;
-
-&lt;p&gt;As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
-    &lt;img src=&quot;/img/post-sample-image.jpg&quot; alt=&quot;Post Sample Image&quot; /&gt;
-&lt;/a&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;To go places and do things that have never been done before – that’s what living is all about.&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.&lt;/p&gt;
-
-&lt;p&gt;As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.&lt;/p&gt;
-
-&lt;p&gt;Placeholder text by &lt;a href=&quot;http://spaceipsum.com/&quot;&gt;Space Ipsum&lt;/a&gt;. Photographs by &lt;a href=&quot;https://www.flickr.com/photos/nasacommons/&quot;&gt;NASA on The Commons&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;至于思想与行为的割裂，即自欺欺人，或出于利他，或出于利己，或出于善，或出于恶，或出于无奈，或出于奸诈。这或许是人不得自由，是人痛苦的根源吧。
+那“自由”是否可以定义为思想与行为的统一？&lt;/p&gt;
 </description>
-        <pubDate>Tue, 10 Jun 2014 20:00:00 +0800</pubDate>
-        <link>http://ericalex.github.io//2014/06/10/dinosaurs/</link>
-        <guid isPermaLink="true">http://ericalex.github.io//2014/06/10/dinosaurs/</guid>
+        <pubDate>Mon, 22 Sep 2014 20:00:00 +0800</pubDate>
+        <link>http://ericalex.github.io//2014/09/22/001-fragmentation-and-unity/</link>
+        <guid isPermaLink="true">http://ericalex.github.io//2014/09/22/001-fragmentation-and-unity/</guid>
         
         
       </item>

@@ -32,7 +32,27 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        });
+        
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+    </script>
 </head>
 
 
@@ -94,12 +114,18 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
+			<center>
+    <img src="/img/selfie.jpg" width="300" height="300" alt="Selfie">
+    <h2 class="section-heading">Xin Wang</h2>
+</center>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestiae debitis nobis, quod sapiente qui voluptatum, placeat magni repudiandae accusantium fugit quas labore non rerum possimus, corrupti enim modi! Et.</p>
-
+<p>A doctoral student of Zhejiang University specialize in structural geology. 
+    He developed a system (<a href="https://github.com/EricAlex/structrock">GitHub repository</a>) 
+    that acquire and analyze fracture data from point clouds from outcrop LiDAR surveys, 
+    capable of correcting and analyzing errors from regular sampling methods. 
+    He is now working on the physical modeling of fracturing, folding and faulting. 
+    With a background in Remote Sensing and GIS, he is also seeking some breakthrough in processing remote sensing and GIS data, 
+    especially when he has obtained some experiences in processing large data sets and developing softwares.</p>
 		</div>
 	</div>
 </div>
@@ -152,7 +178,7 @@
 <!-- Custom Theme JavaScript -->
 <script src="/js/clean-blog.min.js "></script>
 
-
+    
 </body>
 
 </html>

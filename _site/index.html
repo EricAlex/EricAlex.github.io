@@ -32,7 +32,27 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        });
+        
+        MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+    </script>
 </head>
 
 
@@ -96,78 +116,83 @@
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			
 <div class="post-preview">
-    <a href="/2014/09/24/man-must-explore/">
-        <h2 class="post-title">            Man must explore, and this is exploration at its greatest
+    <a href="/2016/01/07/006-use-geology-map-like-google-map/">
+        <h2 class="post-title">            Use geology maps like using Google Maps on your iPad
         </h2>
         
         <h3 class="post-subtitle">
-            Problems look mighty small from 150 miles up
+            
         </h3>
         
     </a>
-    <p class="post-meta">Posted by Start Bootstrap on September 24, 2014</p>
+    <p class="post-meta">Posted by Xin Wang on January 7, 2016</p>
 </div>
 <hr>
 
 <div class="post-preview">
-    <a href="/2014/09/18/i-believe/">
-        <h2 class="post-title">            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+    <a href="/2015/12/25/005-structrock/">
+        <h2 class="post-title">            Structrock: a cross-platform outcrop point cloud processing system
         </h2>
         
     </a>
-    <p class="post-meta">Posted by Start Bootstrap on September 18, 2014</p>
+    <p class="post-meta">Posted by Xin Wang on December 25, 2015</p>
 </div>
 <hr>
 
 <div class="post-preview">
-    <a href="/2014/08/24/science-has-not-yet-mastered-prophecy/">
-        <h2 class="post-title">            Science has not yet mastered prophecy
+    <a href="/2015/12/24/004-shannon-kotelnikov-simulation/">
+        <h2 class="post-title">            Shannon-Kotel’nikov Mappings in Joint Source-Channel Coding: a Simulation using MATLAB
         </h2>
         
         <h3 class="post-subtitle">
-            We predict too much for the next year and yet far too little for the next ten.
+            
         </h3>
         
     </a>
-    <p class="post-meta">Posted by Start Bootstrap on August 24, 2014</p>
+    <p class="post-meta">Posted by Xin Wang on December 24, 2015</p>
 </div>
 <hr>
 
 <div class="post-preview">
-    <a href="/2014/07/08/failure-is-not-an-option/">
-        <h2 class="post-title">            Failure is not an option
+    <a href="/2015/12/23/003-ignorance-and-arrogance/">
+        <h2 class="post-title">            无知、歪曲、自大与情感处理
         </h2>
         
         <h3 class="post-subtitle">
-            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+            
         </h3>
         
     </a>
-    <p class="post-meta">Posted by Start Bootstrap on July 8, 2014</p>
+    <p class="post-meta">Posted by Xin Wang on December 23, 2015</p>
 </div>
 <hr>
 
 <div class="post-preview">
-    <a href="/2014/07/01/dreams/">
-        <h2 class="post-title">            The dreams of yesterday are the hopes of today and the reality of tomorrow.
+    <a href="/2015/04/06/002-you-are-not-alone/">
+        <h2 class="post-title">            Yes, you are not alone.
         </h2>
         
     </a>
-    <p class="post-meta">Posted by Start Bootstrap on July 1, 2014</p>
+    <p class="post-meta">Posted by Xin Wang on April 6, 2015</p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2014/09/22/001-fragmentation-and-unity/">
+        <h2 class="post-title">            割裂与统一
+        </h2>
+        
+        <h3 class="post-subtitle">
+            
+        </h3>
+        
+    </a>
+    <p class="post-meta">Posted by Xin Wang on September 22, 2014</p>
 </div>
 <hr>
 
 
 <!-- Pager -->
-
-<ul class="pager">
-    
-    
-    <li class="next">
-        <a href="/page2">Older Posts &rarr;</a>
-    </li>
-    
-</ul>
 
 
 		</div>
@@ -222,7 +247,7 @@
 <!-- Custom Theme JavaScript -->
 <script src="/js/clean-blog.min.js "></script>
 
-
+    
 </body>
 
 </html>
