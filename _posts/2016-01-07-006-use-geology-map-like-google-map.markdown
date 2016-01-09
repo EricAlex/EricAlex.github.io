@@ -48,7 +48,7 @@ then right click on it, select "Input X and Y", then enter its < longitude latit
 click georeferencing->Update Georeferencing.</p>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/georeferencing.jpg" alt="Georeferencing">
+    <img src="{{ site.baseurl }}/img/post-006/geology-map.jpg" alt="Georeferencing">
 </a>
 <span class="caption text-muted">Figure 2. Procedure of georeferencing geology maps.</span>
 
