@@ -42,13 +42,13 @@ I left geology maps as rasters and moved to the next step.</p>
 <h2 class="section-heading">Georeferencing maps and triming edges</h2>
 
 <p>Open ArcMap, add one piece of geology map, 
-notice that normally you will find points at four corners where you can read their < longitude latitude >. 
-Select the tool in georeferencing toolbar highlighed with red frame in Fig 2, left click on one of the < longitude latitude > known points, 
-then right click on it, select "Input X and Y", then enter its < longitude latitude >. After processing all points with above procedures, 
+notice that normally you will find points at four corners where you can read their (longitude latitude). 
+Select the tool in georeferencing toolbar highlighed with red frame in Fig 2, left click on one of the (longitude latitude) known points, 
+then right click on it, select "Input X and Y", then enter its (longitude latitude). After processing all points with above procedures, 
 click georeferencing->Update Georeferencing.</p>
 
 <a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/geology-map.jpg" alt="Georeferencing">
+    <img src="{{ site.baseurl }}/img/post-006/georeferencing.jpg" alt="Georeferencing">
 </a>
 <span class="caption text-muted">Figure 2. Procedure of georeferencing geology maps.</span>
 
