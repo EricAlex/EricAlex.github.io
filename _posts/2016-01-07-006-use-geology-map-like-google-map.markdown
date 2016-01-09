@@ -42,10 +42,10 @@ I left geology maps as rasters and moved to the next step.</p>
 <h2 class="section-heading">Georeferencing maps and triming edges</h2>
 
 <p>Open ArcMap, add one piece of geology map, 
-notice that normally you will find points at four corners where you can read their < longitude latitude >. 
-Select the tool in georeferencing toolbar highlighed with red frame in Fig 2, left click on one of the < longitude latitude > known points, 
-then right click on it, select "Input X and Y", then enter its < longitude latitude >. After processing all points with above procedures, 
-click georeferencing->Update Georeferencing.</p>
+notice that normally you will find points at four corners where you can read their (longitude latitude). 
+Select the tool in georeferencing toolbar highlighed with red frame in Fig 2, left click on one of the (longitude latitude) known points, 
+then right click on it, select "Input X and Y", then enter its (longitude latitude). After processing all points with above procedures, 
+click georeferencing:Update Georeferencing.</p>
 
 <a href="#">
     <img src="{{ site.baseurl }}/img/post-006/georeferencing.jpg" alt="Georeferencing">
@@ -61,10 +61,10 @@ click georeferencing->Update Georeferencing.</p>
 
 <p>Edges should be trimed off when mosaicing these maps together.</p>
 <p>Create new polygon shapefile and add it in, sketch a polygon that just covers the mapping boundary of the geology map. 
-Use this polygon clip the raster map: ArcToolbox->Data Management Tools->Raster->Raster Processing->Clip.</p>
-<p>Define projection of the cliped map: ArcToolbox->Data Management Tools->Projections and Tranformations->Define Projection. 
+Use this polygon clip the raster map: ArcToolbox:Data Management Tools:Raster:Raster Processing:Clip.</p>
+<p>Define projection of the cliped map: ArcToolbox:Data Management Tools:Projections and Tranformations:Define Projection. 
 Define it as "WGS 1984 UTM Zone xx", according to its zone number.</p>
-<p>Save the cliped and projection defined map as *.tif: ArcToolbox->Data Management Tools->Raster->Raster Dataset->Copy Raster. 
+<p>Save the cliped and projection defined map as *.tif: ArcToolbox:Data Management Tools:Raster:Raster Dataset:Copy Raster. 
 Include .tif as the extension of your output file.</p>
 <p>The final result so far looks like Fig 4.</p>
 
