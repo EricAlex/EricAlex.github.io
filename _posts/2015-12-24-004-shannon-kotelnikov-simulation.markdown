@@ -9,15 +9,28 @@ header-img: "img/post-004/bg.jpg"
 
 <h2 class="section-heading">1 Introduction</h2>
 
-<p>When transmitting analog source signals like images and sound over waveform channels, the most common approach is to use separate source and channel coders. Separation of source and channel was proven to be optimal by Shannon [1]. However, the price to pay to achieve near- optimality involve very high encoding/decoding complexity, significant delays, specific design for desired rate/distortion and threshold effect: lack of robustness to small changes in parameters. So in practice, digital systems based on joint source-channel coding (general transformation) may have performance advantages when complexity is constrained. Shannon-Kotel'ikov mapping is a kind of non-linear transformation which can provide both bandwidth reduction and bandwidth expansion.</p>
+<p>When transmitting analog source signals like images and sound over waveform channels, 
+the most common approach is to use separate source and channel coders. Separation of source and channel was proven to be optimal by Shannon [1]. 
+However, the price to pay to achieve near- optimality involve very high encoding/decoding complexity, significant delays, 
+specific design for desired rate/distortion and threshold effect: lack of robustness to small changes in parameters. 
+So in practice, digital systems based on joint source-channel coding (general transformation) may have performance 
+advantages when complexity is constrained. 
+Shannon-Kotel'ikov mapping is a kind of non-linear transformation which can provide both bandwidth reduction and bandwidth expansion.</p>
 
-<p>Shannon-Kotel'ikov mappings are related to channeloptimized vector quantizers as devel- oped by Vaishampayan [2]. As opposed to quantizing the source and thereby creating a discrete set of representation points which are then mapped onto the channel, the Shannon-Kotel'ikov mappings perform either a projection of the source onto a lower dimensional subset (lossy com- pression), or map the source into a higher dimensional space (error control) [3].</p>
+<p>Shannon-Kotel'ikov mappings are related to channeloptimized vector quantizers as devel- oped by Vaishampayan [2]. 
+As opposed to quantizing the source and thereby creating a discrete set of representation points which are then mapped onto the channel, 
+the Shannon-Kotel'ikov mappings perform either a projection of the source onto a lower dimensional subset (lossy com- pression), 
+or map the source into a higher dimensional space (error control) [3].</p>
 
 <h2 class="section-heading">2 Simulation</h2>
 
-<p>This report performed simulation of 2:1 Bandwidth Reduction with the Archimedes Spiral (as shown in Figure 1) suing MATLAB with methods described in [3]. The simulation is performed for a image signal source as shown in Figure 2(a) and an additive white Gaussian noise (AWGN) channel. A factor-two bandwidth reduction, or compression, is achieved by combining two consecutive samples using a non-linear mapping.</p>
+<p>This report performed simulation of 2:1 Bandwidth Reduction with the Archimedes Spiral (as shown in Figure 1) suing MATLAB with methods 
+described in [3]. The simulation is performed for a image signal source as shown in Figure 2(a) and an additive white Gaussian noise (AWGN) 
+channel. A factor-two bandwidth reduction, or compression, is achieved by combining two consecutive samples using a non-linear mapping.</p>
 
-<p>We perform the bandwidth reduction by transmitting a combination of two source samples \( x_1 \) and \( x_2 \) as one channel sample \( y \). This is achieved by first approximating a point in \( R^2 \) to the closest point on the double Archimedes' spirals. The spirals can be described parametrically as,</p>
+<p>We perform the bandwidth reduction by transmitting a combination of two source samples \( x_1 \) and \( x_2 \) as one 
+channel sample \( y \). This is achieved by first approximating a point in \( R^2 \) to the closest point on the double Archimedes' spirals. 
+The spirals can be described parametrically as,</p>
 `\[
 x_1 = 2 \Delta \frac{\theta}{2 \pi} \cos (\theta),x_2 = 2 \Delta \frac{\theta}{2 \pi} \sin (\theta)
 \]`
@@ -33,14 +46,19 @@ x_1 = 2 \Delta \frac{\theta}{2 \pi} \cos (\theta + \pi),x_2 = 2 \Delta \frac{\th
 `\[
   y = l_{\pm}(r) = \pm \zeta (\frac{\pi}{\Delta})^2 r^2
 \]`
-<p>where \(+\) represents points residing on the blue line and the \(-\) represents points residing on the the red lines in Figure 1. \(r= \frac{\Delta}{\pi}\theta\) and the parameter \(\zeta = \eta \Delta = 0.16 \Delta\) makes this operator an approximation of the length along the spiral. This expression is found by using a nonlinear curve fit on the expression of the true arc length</p>
+<p>where \(+\) represents points residing on the blue line and the \(-\) represents points residing on the the red lines in Figure 1. 
+\(r= \frac{\Delta}{\pi}\theta\) and the parameter \(\zeta = \eta \Delta = 0.16 \Delta\) makes this operator an approximation of the 
+length along the spiral. This expression is found by using a nonlinear curve fit on the expression of the true arc length</p>
 `\[
   l(r)_s = \frac{1}{2}(r\sqrt{1 + (\frac{\pi}{\Delta}r)^2} + \frac{\Delta}{\pi} \sinh^{-1} (\frac{\pi}{\Delta}r))
 \]`
+
+<center>
 <a href="#">
     <img src="{{ site.baseurl }}/img/post-004/spiral-mapping.jpg" alt="Spiral mapping">
 </a>
 <span class="caption text-muted">Figure 1. Spiral mapping.</span>
+</center>
 
 {% highlight matlab %}
 %% spiral curve mapping and transform to 1 dimension
@@ -119,20 +137,31 @@ end
 
 <h2 class="section-heading">3 Results and Discussion</h2>
 
-<p>The results of 2:1 Bandwidth Reduction with the Archimedesâ€?Spiral simulation are shown in Figure 2 and Figure 3. Figure 2 (a), (b), (c) and (d) are the original image, reconstructed image with CSNR = 30db, 16dB and 4dB separately.</p>
+<p>The results of 2:1 Bandwidth Reduction with the Archimedes Spiral simulation are shown in Figure 2 and Figure 3. Figure 2 (a), (b), (c) 
+and (d) are the original image, reconstructed image with CSNR = 30db, 16dB and 4dB separately.</p>
+
+<center>
 <a href="#">
     <img src="{{ site.baseurl }}/img/post-004/results.jpg" alt="Results">
 </a>
-<span class="caption text-muted">Figure 2. (a) Original image (b) Reconstructed image with CSNR = 30dB (c) Reconstructed image with CSNR = 16dB (d) Reconstructed image with CSNR = 4dB.</span>
+<span class="caption text-muted">Figure 2. (a) Original image (b) Reconstructed image with CSNR = 30dB (c) 
+Reconstructed image with CSNR = 16dB (d) Reconstructed image with CSNR = 4dB.</span>
+</center>
 
-<p>As calculated, the system has an SNR only \(\sqrt{6}/\pi = 1.1\) dB away from OPTA, which is shown clearly in the Figure 3. Limited by methods used in the MATLAB simulation, the performance is different from the SNR calculated, better or worse. As we can see, as CSNR increase from 20 to 30, the simulation results were narrowly worse than the results of calculation, which may be limited by some method used in the simulation. Further research should be focusing on this.</p>
+<p>As calculated, the system has an SNR only \(\sqrt{6}/\pi = 1.1\) dB away from OPTA, which is shown clearly in the Figure 3. 
+Limited by methods used in the MATLAB simulation, the performance is different from the SNR calculated, better or worse. 
+As we can see, as CSNR increase from 20 to 30, the simulation results were narrowly worse than the results of calculation, 
+which may be limited by some method used in the simulation. Further research should be focusing on this.</p>
 
+<center>
 <a href="#">
     <img src="{{ site.baseurl }}/img/post-004/opta.jpg" alt="OPTA">
 </a>
 <span class="caption text-muted">Figure 3. Optimal performance theoretically attainable (OPTA).</span>
+</center>
 
 <h2 class="section-heading">References</h2>
 <p>[1] C. E. Shannon, A mathematical theory of communication. The Bell System Technical J., vol. 27, pp. 379-423, 1948</p>
 <p>[2] V. A. Vaishampayan. Combined source-channel coding for bandlimited waveform channels. Ph.D. dissertation. University of Maryland. 1989.</p>
-<p>[3] Fredrik Hekland, Pal Anders Floor and Tor A. Ramstad. Shannon-Kotelâ€™nikov Mappings in Joint Source-Channel Coding. IEEE TRANSACTIONS ON COMMUNICATIONS. VOL. 57, NO. 1, JANUARY 2009.</p>
+<p>[3] Fredrik Hekland, Pal Anders Floor and Tor A. Ramstad. Shannon-Kotel'nikov Mappings in Joint Source-Channel Coding. 
+IEEE TRANSACTIONS ON COMMUNICATIONS. VOL. 57, NO. 1, JANUARY 2009.</p>
