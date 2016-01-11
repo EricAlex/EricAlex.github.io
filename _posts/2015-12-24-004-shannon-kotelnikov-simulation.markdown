@@ -7,6 +7,8 @@ author:     "Xin Wang"
 header-img: "img/post-004/bg.jpg"
 ---
 
+\*Notice: You can download the <a href="{{ site.baseurl }}/PDFs/Shannon-Kotel'ikov.pdf">PDF version of this post</a>\*
+
 <h2 class="section-heading">1 Introduction</h2>
 
 <p>When transmitting analog source signals like images and sound over waveform channels, 
