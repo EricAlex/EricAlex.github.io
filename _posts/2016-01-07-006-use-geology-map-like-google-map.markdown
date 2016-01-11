@@ -7,7 +7,7 @@ author:     "Xin Wang"
 header-img: "img/post-006/bg.jpg"
 ---
 
-<p>*Notice: You can download the <a href="{{ site.baseurl }}/PDFs/use-geology-map-like-google-map.pdf">PDF version of this post</a>*</p>
+<p>\*Notice: You can download the <a href="{{ site.baseurl }}/PDFs/use-geology-map-like-google-map.pdf">PDF version of this post</a>\*</p>
 
 <p>Imagine you are doing geology surveys in the field, enjoying geology map services as powerful as Google Maps: 
 locating yourself on the map, zooming in, zooming out, drawing lines to get the stratigraphic profile, 
