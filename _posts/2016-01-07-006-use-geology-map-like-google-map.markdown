@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Use geology maps like using Google Maps on your iPad"
-subtitle:   ""
+subtitle:   "DIY your geology maps service"
 date:       2016-01-07 12:00:00
 author:     "Xin Wang"
 header-img: "img/post-006/bg.jpg"
