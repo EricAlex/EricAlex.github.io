@@ -13,7 +13,7 @@ weibo_username: 1816641837
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: pretty
 paginate: 6
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
