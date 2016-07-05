@@ -8,6 +8,8 @@ header-img: "img/post-009/bg.jpg"
 
 # The New Yorker 漫画选集
 
+<p>*温馨提示: 可以下载本漫画选集的 <a href="{{ site.baseurl }}/PDFs/A-collection-of-The-New-Yorker-Cartoons.pdf">PDF 版本</a>*</p>
+
 <p><center>
 <a href="#">
     <img src="{{ site.baseurl }}/img/post-009/race_horses.jpg">
