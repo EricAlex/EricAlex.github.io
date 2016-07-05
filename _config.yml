@@ -10,6 +10,7 @@ github_username:  EricAlex
 facebook_username:  
 weibo_username: 1816641837
 #douban_username: 61026889
+host: 0.0.0.0
 
 # Build settings
 markdown: kramdown
