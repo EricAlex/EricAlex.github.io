@@ -1,0 +1,284 @@
+---
+layout:     post
+title:      "A Collection of The New Yorker Cartoons, Second Series"
+date:       2016-07-07 12:00:00
+author:     "Xin Wang"
+header-img: "img/post-010/bg.jpg"
+---
+
+# The New Yorker 漫画选集，第二辑
+
+<p>*温馨提示: 可以下载本漫画选集的 <a href="{{ site.baseurl }}/PDFs/A-collection-of-The-New-Yorker-Cartoons-season-2.pdf">PDF 版本</a>*</p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/wag_your_tail.jpg">
+</a>
+<span class="caption text-muted">他是我最好的朋友，而且他努力工作一整天了，你至少摇摇你的尾巴嘛。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/heavy_topics.jpg">
+</a>
+<span class="caption text-muted">沉重的话题。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/anti-spy.jpg">
+</a>
+<span class="caption text-muted">反盯梢。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/after_give_up.jpg">
+</a>
+<span class="caption text-muted">What do you want to be when you give up?</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/occupational_habit.jpg">
+</a>
+<span class="caption text-muted">The synchronised-swim team quit.</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/overthinking.jpg">
+</a>
+<span class="caption text-muted">你过虑了。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/before_arrest.jpg">
+</a>
+<span class="caption text-muted">你有权保持沉默，但你所说的任何一句话都有可能被单独拿出来放到网上。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/Jolly_Roger.jpg">
+</a>
+<span class="caption text-muted">So Jolly Roger is in fact Miserable Roger.</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/o_c_d.jpg">
+</a>
+<span class="caption text-muted">这瓶药就能治好你的强迫症，但治病之前能不能先把我的书架整理了？</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/Socrates.jpg">
+</a>
+<span class="caption text-muted">等等！如果我们说服法官，让他相信我是假苏格拉底，而真苏格拉底仍潜逃在外，怎么样？</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/can_not_read.jpg">
+</a>
+<span class="caption text-muted">别担心，它不识字的。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/targeted_advertising.jpg">
+</a>
+<span class="caption text-muted">哪有那么多爱，定向广告投放而已。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/better_desk.jpg">
+</a>
+<span class="caption text-muted">你说的很对，这比站立式办公桌好多了。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/island_surfing.jpg">
+</a>
+<span class="caption text-muted">荒岛冲浪。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/insignificant.jpg">
+</a>
+<span class="caption text-muted">第一步要让他看星空，让他意识到他是如此渺小。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/lose_chess.jpg">
+</a>
+<span class="caption text-muted">我记得你当年还只会输给一台超级计算机。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/12_hungry_man.jpg">
+</a>
+<span class="caption text-muted">十二饿汉。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/check_message.jpg">
+</a>
+<span class="caption text-muted">你知道我最烦你在吃饭的时候收发短信。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/treasure_hunt.jpg">
+</a>
+<span class="caption text-muted">藏宝图。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/step_count.jpg">
+</a>
+<span class="caption text-muted">想知道我们增加的微信步数吗？</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/duck_face.jpg">
+</a>
+<span class="caption text-muted">Please, Steve, not the duck face.</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/real_theatre.jpg">
+</a>
+<span class="caption text-muted">这是为了模拟最真实的影院环境。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/Valencia_filter.jpg">
+</a>
+<span class="caption text-muted">嗯，这些片子看起来不太好啊，我建议加个Valencia滤镜。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/look_down.jpg">
+</a>
+<span class="caption text-muted">往下看！</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/air-conditioning.jpg">
+</a>
+<span class="caption text-muted">This next song is also about air-conditioning.</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/woman_children_pressure.jpg">
+</a>
+<span class="caption text-muted">在生孩子问题上社会真是给了女性很大压力。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/what_ass_like.jpg">
+</a>
+<span class="caption text-muted">据我所知你整个夏天都呆在某个臀，能告诉我们那是一种怎样的体验吗？</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/solo_after_serve.jpg">
+</a>
+<span class="caption text-muted">你也不能每次发球后都solo吧。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/fight_the_biggest_one.jpg">
+</a>
+<span class="caption text-muted">亲爱的，要记住：射人先射马，擒贼先擒王。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/has_a_tell.jpg">
+</a>
+<span class="caption text-muted">If he has a tell, I haven’t found it.</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/reply_all.jpg">
+</a>
+<span class="caption text-muted">他点了"回复全部"。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/aspect_ratio.jpg">
+</a>
+<span class="caption text-muted">看我们能做点啥来修正你的纵横比问题。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/to_buy_or_not_to_buy.jpg">
+</a>
+<span class="caption text-muted">莎翁的烦恼。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/death_traveling.jpg">
+</a>
+<span class="caption text-muted">旅行中的死神。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/keep_things_fresh.jpg">
+</a>
+<span class="caption text-muted">我只是想让它们保鲜。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/send_more_rock.jpg">
+</a>
+<span class="caption text-muted">急需石块来救命！</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/nobody_moo.jpg">
+</a>
+<span class="caption text-muted">Police! Nobody moo!</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/deeper_connection.jpg">
+</a>
+<span class="caption text-muted">所以呢，你真正需要的是加深和令尊的感情，而不是楼下的牙医。</span>
+</center></p>
+
+<p><center>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/post-010/robot_fortune_teller.jpg">
+</a>
+<span class="caption text-muted">你将继续做原来一直在做的重复性工作。</span>
+</center></p>
