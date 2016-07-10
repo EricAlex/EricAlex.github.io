@@ -42,9 +42,7 @@ from the Internet, no bother scan your geology maps. If you bought or borrowed y
 as the geology map of Sichuan Province's Dege County, China, shown bellow:</p>
 
 <center>
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/geology-map.jpg" alt="Geology Map">
-</a>
+<img src="{{ site.baseurl }}/img/post-006/geology-map.jpg" alt="Geology Map">
 <span class="caption text-muted">Figure 1. Geology map of Dege County, Sichuan Province, China.</span>
 </center>
 
@@ -64,18 +62,14 @@ then right click on it, select "Input X and Y", then enter its \(<\)longitude, l
 click georeferencing\(\rightarrow\)Update Georeferencing.</p>
 
 <center>
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/georeferencing.jpg" alt="Georeferencing">
-</a>
+<img src="{{ site.baseurl }}/img/post-006/georeferencing.jpg" alt="Georeferencing">
 <span class="caption text-muted">Figure 2. Procedure of georeferencing geology maps.</span>
 </center>
 
 <p>Adjacent geology maps' edges will overlap after georeferencing (Fig 3).</p>
 
 <center>
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/overlapping-edges.jpg" alt="Overlapping Edges">
-</a>
+<img src="{{ site.baseurl }}/img/post-006/overlapping-edges.jpg" alt="Overlapping Edges">
 <span class="caption text-muted">Figure 3. Overlapping edges of adjacent geology maps.</span>
 </center>
 
@@ -92,9 +86,7 @@ Include .tif as the extension of your output file.</p>
 <p>The final result so far looks like Fig 4.</p>
 
 <center>
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/edges-trimed.jpg" alt="Edges Trimed">
-</a>
+<img src="{{ site.baseurl }}/img/post-006/edges-trimed.jpg" alt="Edges Trimed">
 <span class="caption text-muted">Figure 4. Overlapping edges were trimed off.</span>
 </center>
 
@@ -104,9 +96,7 @@ Include .tif as the extension of your output file.</p>
 click add layer, browse and select geotiff maps, "SRS" select "WGS84", click "Save&Style".</p>
 
 <center>
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/import-to-tilemill.jpg" alt="Import to TileMill">
-</a>
+<img src="{{ site.baseurl }}/img/post-006/import-to-tilemill.jpg" alt="Import to TileMill">
 <span class="caption text-muted">Figure 5. Importing maps into TileMill.</span>
 </center>
 
@@ -132,9 +122,7 @@ zoom range, Centor and MetaTile size, the export extent and zoom range will deci
 you wouldn't like to store a 20G MBTiles file in your iPad.</p>
 
 <center>
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/export-map-data.jpg" alt="Export Map Data">
-</a>
+<img src="{{ site.baseurl }}/img/post-006/export-map-data.jpg" alt="Export Map Data">
 <span class="caption text-muted">Figure 6. Exporting geology map service data: MbTiles.</span>
 </center>
 
@@ -145,9 +133,7 @@ It is still being developed, as shown in Fig 7A and 7B. Maybe too simple,
 fancy features like tracing and marking locations are not included. But it will satisfy your basic usage.</p>
 
 <center>
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-006/large-scale-and-detailed-map.jpg" alt="Map on iPad">
-</a>
+<img src="{{ site.baseurl }}/img/post-006/large-scale-and-detailed-map.jpg" alt="Map on iPad">
 <span class="caption text-muted">Figure 7. Using geology map service on iPad. A: Large scale view; B: Detailed view.</span>
 </center>
 

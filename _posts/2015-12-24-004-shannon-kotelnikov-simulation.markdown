@@ -68,9 +68,7 @@ length along the spiral. This expression is found by using a nonlinear curve fit
 \]`
 
 <center>
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-004/spiral-mapping.jpg" alt="Spiral mapping">
-</a>
+<img src="{{ site.baseurl }}/img/post-004/spiral-mapping.jpg" alt="Spiral mapping">
 <span class="caption text-muted">Figure 1. Spiral mapping.</span>
 </center>
 
@@ -155,9 +153,7 @@ end
 and (d) are the original image, reconstructed image with CSNR = 30db, 16dB and 4dB separately.</p>
 
 <center>
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-004/results.jpg" alt="Results">
-</a>
+<img src="{{ site.baseurl }}/img/post-004/results.jpg" alt="Results">
 <span class="caption text-muted">Figure 2. (a) Original image (b) Reconstructed image with CSNR = 30dB (c) 
 Reconstructed image with CSNR = 16dB (d) Reconstructed image with CSNR = 4dB.</span>
 </center>
@@ -168,9 +164,7 @@ As we can see, as CSNR increase from 20 to 30, the simulation results were narro
 which may be limited by some method used in the simulation. Further research should be focusing on this.</p>
 
 <center>
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-004/opta.jpg" alt="OPTA">
-</a>
+<img src="{{ site.baseurl }}/img/post-004/opta.jpg" alt="OPTA">
 <span class="caption text-muted">Figure 3. Optimal performance theoretically attainable (OPTA).</span>
 </center>
 
