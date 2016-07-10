@@ -7,9 +7,17 @@ author:     "Xin Wang"
 header-img: "img/post-001/bg.jpg"
 ---
 
-<center>
-<div id="mykudos"></div>
-</center>
+<figure class="kudo kudoable" data-id="1">
+    <a class="kudobject">
+        <div class="opening">
+            <div class="circle">&nbsp;</div>
+        </div>
+    </a>
+    <a href="#kudo" class="count">
+        <span class="num">0</span>
+        <span class="txt">Kudos</span>
+    </a>
+</figure>
 
 <p>冯友兰先生曾经说过（大概意思），西方哲学是通过肯定的方式发展的，即如果A成立，那么就可以说B，继而C。而中国哲学则是通过否定的方式发展的，即A非B，同时C也不可得兼。
 但都须是理性的，是思辨的，否则恐难称之为哲学。哥德尔已经证明，人类的任何逻辑系统不可能同时具备完备性和正确性。逻辑系统和哲学系统的类比可能很唐突，很不恰当。

@@ -8,9 +8,17 @@ header-img: "img/post-010/bg.jpg"
 
 # The New Yorker 漫画选集，第二辑
 
-<center>
-<div id="mykudos"></div>
-</center>
+<figure class="kudo kudoable" data-id="1">
+    <a class="kudobject">
+        <div class="opening">
+            <div class="circle">&nbsp;</div>
+        </div>
+    </a>
+    <a href="#kudo" class="count">
+        <span class="num">0</span>
+        <span class="txt">Kudos</span>
+    </a>
+</figure>
 
 <p>*温馨提示: 可以下载本漫画选集的 <a href="{{ site.baseurl }}/PDFs/A-collection-of-The-New-Yorker-Cartoons-season-2.pdf">PDF 版本</a>*</p>
 

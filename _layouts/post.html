@@ -42,12 +42,6 @@ layout: default
                     {% endif %}
                 </ul>
 
-                <script>(function(m,y,k,u,d,o,s){m['mykudos']=d;m[d]=m[d]||function(){
-                (m[d].q=m[d].q||[]).push(arguments)},m[d].l=1*new Date(); o=y.createElement(k);
-                s=y.getElementsByTagName(k)[0];o.async=1;o.src=u;s.parentNode.insertBefore(o,s)}
-                )(window,document,'script','https://saurabh-kumar.com/mykudos/ku.js','ku');</script>
-                <link href="https://saurabh-kumar.com/mykudos/ku.css" rel="stylesheet">
-                
                 <div id="disqus_thread"></div>
                 <script>
                 /**
@@ -72,6 +66,16 @@ layout: default
                 <noscript>Please enable JavaScript to view the 
                     <a href="https://disqus.com/?ref_noscript" rel="nofollow">
                     comments powered by Disqus.</a></noscript>
+
+                <script>
+                /*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+                (function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+                </script>
+                  <script src="/js/jquery.min.js"></script>
+                  <script src="/js/parse-1.2.3.min.js"></script>
+                  <script src="/js/jstorage.js"></script>
+                  <script src="/js/kudos.js"></script>
+                  <script src="/js/parse-kudos.js"></script>
             </div>
         </div>
     </div>

@@ -7,9 +7,17 @@ author:     "Xin Wang"
 header-img: "img/post-003/bg.jpg"
 ---
 
-<center>
-<div id="mykudos"></div>
-</center>
+<figure class="kudo kudoable" data-id="1">
+    <a class="kudobject">
+        <div class="opening">
+            <div class="circle">&nbsp;</div>
+        </div>
+    </a>
+    <a href="#kudo" class="count">
+        <span class="num">0</span>
+        <span class="txt">Kudos</span>
+    </a>
+</figure>
 
 <p>无知是什么？是那些回答“不知道”的人？恰恰相反，无知的人会匆忙接受一个复杂问题的错误答案。他们意识不到那些答案的荒谬，也就绝不可能找到真正的答案。
 他们中想像力强的会凭空臆想出一个答案，想象力弱的则接受别人的。所依无知的人从来不缺“答案”，也从来不觉得自己无知。智慧便从此中产生，

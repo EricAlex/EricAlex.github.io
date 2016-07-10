@@ -8,7 +8,17 @@ header-img: "img/about-bg.jpg"
 <center>
     <img src="{{ site.baseurl }}/img/selfie.jpg" width="300" height="300" alt="Selfie">
     <h2 class="section-heading">Xin Wang</h2>
-	<div id="mykudos"></div>
+    <figure class="kudo kudoable" data-id="1">
+      <a class="kudobject">
+          <div class="opening">
+              <div class="circle">&nbsp;</div>
+          </div>
+      </a>
+      <a href="#kudo" class="count">
+          <span class="num">0</span>
+          <span class="txt">Kudos</span>
+      </a>
+  </figure>
 </center>
 
 <p>A doctoral student of Zhejiang University specialize in structural geology. 
@@ -19,8 +29,12 @@ header-img: "img/about-bg.jpg"
     With a background in Remote Sensing and GIS, he is also seeking some breakthrough in processing remote sensing and GIS data, 
     especially when he has obtained some experiences in processing large data sets and developing softwares.</p>
 
-<script>(function(m,y,k,u,d,o,s){m['mykudos']=d;m[d]=m[d]||function(){
-(m[d].q=m[d].q||[]).push(arguments)},m[d].l=1*new Date(); o=y.createElement(k);
-s=y.getElementsByTagName(k)[0];o.async=1;o.src=u;s.parentNode.insertBefore(o,s)}
-)(window,document,'script','https://saurabh-kumar.com/mykudos/ku.js','ku');</script>
-<link href="https://saurabh-kumar.com/mykudos/ku.css" rel="stylesheet">
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/parse-1.2.3.min.js"></script>
+  <script src="/js/jstorage.js"></script>
+  <script src="/js/kudos.js"></script>
+  <script src="/js/parse-kudos.js"></script>
