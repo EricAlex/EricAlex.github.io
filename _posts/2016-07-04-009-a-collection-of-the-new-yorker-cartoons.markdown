@@ -8,6 +8,10 @@ header-img: "img/post-009/bg.jpg"
 
 # The New Yorker 漫画选集
 
+<center>
+<div id="mykudos"></div>
+</center>
+
 <p>*温馨提示: 可以下载本漫画选集的 <a href="{{ site.baseurl }}/PDFs/A-collection-of-The-New-Yorker-Cartoons.pdf">PDF 版本</a>*</p>
 
 <p><center>

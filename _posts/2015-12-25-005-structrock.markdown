@@ -8,6 +8,10 @@ header-img: "img/post-005/bg.jpg"
 
 # Structrock
 
+<center>
+<div id="mykudos"></div>
+</center>
+
 A cross-platform outcrop point cloud processing system,
 capable of acquiring fracture data on suppositional planes cutting through digital outcrop models (DOMs).
 

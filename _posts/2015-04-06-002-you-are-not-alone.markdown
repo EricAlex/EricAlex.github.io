@@ -6,6 +6,10 @@ author:     "Xin Wang"
 header-img: "img/post-002/bg.jpg"
 ---
 
+<center>
+<div id="mykudos"></div>
+</center>
+
 <h2 class="section-heading">Scene one:</h2>
 <p>Can't even express herself clearly, but finally, 
 she convinced herself by recalling a lot of irrelevant "examples" and by repeating her irrelevant and absurd points.</p>

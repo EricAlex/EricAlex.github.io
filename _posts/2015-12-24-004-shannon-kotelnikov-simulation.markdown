@@ -7,6 +7,10 @@ author:     "Xin Wang"
 header-img: "img/post-004/bg.jpg"
 ---
 
+<center>
+<div id="mykudos"></div>
+</center>
+
 <p>*Notice: You can download the <a href="{{ site.baseurl }}/PDFs/Shannon-Kotel'ikov.pdf">PDF version of this post</a>*</p>
 
 <h2 class="section-heading">1 Introduction</h2>

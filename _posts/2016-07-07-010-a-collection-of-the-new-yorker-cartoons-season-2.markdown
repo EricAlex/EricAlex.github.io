@@ -8,6 +8,10 @@ header-img: "img/post-010/bg.jpg"
 
 # The New Yorker 漫画选集，第二辑
 
+<center>
+<div id="mykudos"></div>
+</center>
+
 <p>*温馨提示: 可以下载本漫画选集的 <a href="{{ site.baseurl }}/PDFs/A-collection-of-The-New-Yorker-Cartoons-season-2.pdf">PDF 版本</a>*</p>
 
 <p><center>

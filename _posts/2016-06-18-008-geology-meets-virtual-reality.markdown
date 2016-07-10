@@ -6,3 +6,6 @@ author:     "Xin Wang"
 header-img: "img/post-008/bg.jpg"
 ---
 
+<center>
+<div id="mykudos"></div>
+</center>
