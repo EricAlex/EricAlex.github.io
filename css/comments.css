@@ -1,0 +1,26 @@
+.comment {
+    border:1px solid #CCC;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.comment .profile-image .image {
+    border-radius:40px;
+    margin-left:25px;
+    margin-right:15px;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+.comment .content {
+	margin-left:25px;
+    margin-right:25px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.comment .profile-image, 
+.comment .info {
+    display: inline-block;
+    vertical-align: middle;
+}

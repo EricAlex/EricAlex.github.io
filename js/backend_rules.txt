@@ -1,0 +1,17 @@
+{
+  "rules": {
+  	"kudos":{
+  		"$url":{
+  			".read":true,
+  			".write":"data.child('likes').val().length === 0",
+
+  			"likes":{
+  				"$userid":{
+  					".read":true,
+	  				".write":"auth.uid === $userid"
+  				}
+  			}
+  		}
+  	}
+  }
+}
