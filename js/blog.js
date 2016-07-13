@@ -32,6 +32,12 @@ submitBtn.addEventListener('click', function () {
   if (content.trim() == '') {
     return alert('评论内容不能为空');
   }
+  if (email.length > 100) {
+    return alert('电子邮件不能超过100个字符');
+  }
+  if (email == '') {
+    return alert('电子邮件不能为空');
+  }
   commentpostRef.push({
     name: userName,
     message: content,
