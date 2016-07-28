@@ -445,7 +445,7 @@ header-img: "img/post-014/bg.jpg"
 </center></p>
 
 <p><center>
-<img src="{{ site.baseurl }}/img/post-014/Pokémon.jpg">
+<img src="{{ site.baseurl }}/img/post-014/Pokemon.jpg">
 <div class="like">
 <div class="my-like" id="heart_166" data-reblog="{{{ page.url | prepend: site.baseurl | replace: '//', '/' }}" data-id="166"></div>
 <div class="count"><label id="166">0</label></div>
