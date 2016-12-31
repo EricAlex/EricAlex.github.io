@@ -37,57 +37,70 @@ CentOS （Linux發行版之一）是集群或服务器上常用的操作系统�
 GCC、CUDA（可选）、CUDNN（可选）、Python、Binutils、Java 和 Bazel 是编译和安装 TensorFlow 需要的依赖软件。
 
 (1) 首先是 Python 2.7 及 Python 软件包的安装，这里推荐 Anaconda，一个用于科学计算的Python 发行版。下载 Anaconda 在 Linux 下的安装器 Anaconda2-4.2.0-Linux-x86_64.sh，在终端执行：
-``` shell
+
+```shell
 bash Anaconda2-4.2.0-Linux-x86_64.sh
 ```
+
 安装过程中自定义安装地址到`/public/home/xwang/anaconda2`。安装完成后编辑`~/.basgrc` 文件，如果没有
-``` shell
+
+```shell
 # added by Anaconda2 4.2.0 installer
 export PATH="/public/home/xwang/anaconda2/bin:$PATH"
 ```
+
 这两行，则加上。
 
 (2) Java 的安装，网上下载 JDK 8，安装到`/public/home/xwang/usr/local/`下，安装完成后编辑`~/.basgrc` 文件，加上如下几行：
-``` shell
+
+```shell
 export JAVA_HOME=/public/home/xwang/usr/local/jdk_1.8.0
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ```
 
 (3) GCC 和 Binutils 的安装，本文用的是 GCC 4.9.4，下载 GCC 4.9.4 源码，解压源码到`/public/home/xwang/usr/cache/gcc_src/`中，在终端中：
-``` shell
+
+```shell
 cd /public/home/xwang/usr/cache/gcc_src/
 ./configure --prefix=/public/home/xwang/usr/local/
 ```
+
 `./configure --prefix=/public/home/xwang/usr/local/` 过程中很可能会报错说要安装一些依赖项，按要求安装到`/public/home/xwang/usr/local/`即可，本文将不详细讨论这些依赖项的安装，以避免文章的冗长。安装这些依赖项的过程大同小异：终端进到源码目录，运行`./configure --prefix=/public/home/xwang/usr/local/`，然后`make && make install`。安装好依赖项后，编辑`~/.basgrc` 文件，加上如下几行：
-``` shell
+
+```shell
 export PATH=/public/home/xwang/usr/local/bin:$PATH
 export CPLUS_INCLUDE_PATH=/public/home/xwang/usr/local/include
 export LD_LIBRARY_PATH=/public/home/xwang/usr/local/lib:/public/home/xwang/usr/local/lib64
 export C_INCLUDE_PATH=/public/home/xwang/usr/local/include
 export LIBRARY_PATH=/public/home/xwang/usr/local/lib:/public/home/xwang/usr/local/lib64
 ```
+
 所有 GCC 4.9.4 的依赖项都安装好后，在`/public/home/xwang/usr/cache/gcc_src/`中运行`./configure --prefix=/public/home/xwang/usr/local/` 没有错误，然后执行 `make && make install` 进行安装。
 
 下载 Binutils 源码，解压源码到`/public/home/xwang/usr/cache/binutils_src/`中，在终端中：
-``` shell
+
+```shell
 cd /public/home/xwang/usr/cache/binutils_src/
 ./configure --prefix=/public/home/xwang/usr/local/
 make && make install
 ```
 
 (4) Bazel 的安装。下载 Bazel 的源码，终端中：
-``` shell
+
+```shell
 wget https://github.com/bazelbuild/bazel/releases/download/0.4.2/bazel-0.4.2-dist.zip
 mkdir -p bazel-0.4.2
 cd bazel-0.4.2 && unzip ../bazel-0.4.2-dist.zip
 ```
+
 需要修改 Bazel 源码中的 `tools/cpp/CROSSTOOL` 和 `tools/cpp/cc_configure.bzl` 文件。
 
 在 `CROSSTOOL` 文件中，仅需要修改 "local_linux" 相关的 toolchain 代码块。
 
 (a) 更改所有 binutils， gcc 和 cpp 工具的路径，包括 `ar`, `compat-ld`, `cpp`, `gcc`, `gcov`, `ld`, `nm`, `objcopy`, `objdump`, `strip` 等。例如，把 `tool_path { name: "ar" path: "/usr/bin/ar" }` 改为 `tool_path { name: "ar" path: "/public/home/xwang/usr/local/bin/ar" }`。若不知道相应路径，可以在终端：
-``` shell
+
+```shell
 [xwang@localhost ~]$ which gcc
 /public/home/xwang/usr/local/bin/gcc
 [xwang@localhost ~]$ which ld
@@ -96,6 +109,7 @@ cd bazel-0.4.2 && unzip ../bazel-0.4.2-dist.zip
 /public/home/xwang/usr/local/bin/gcov
 ...
 ```
+
 找到。
 
 (b) 增加一句 `tool_path { name: "as" path: "/cm/shared/apps/binutils/2.25/src/bin/ar" }`。
@@ -103,32 +117,37 @@ cd bazel-0.4.2 && unzip ../bazel-0.4.2-dist.zip
 (c) 把 `linker_flag: "-lstdc++"` 改为 `linker_flag: "-lstdc++, -Wl"` ；把`linker_flag: "-B/usr/bin/"` 改为 `linker_flag: "-B/public/home/xwang/usr/local/bin/"`。
 
 (d) 更改 `cxx_builtin_include_library` 条目如下：
-``` shell
+
+```shell
 cxx_builtin_include_directory: "/public/home/xwang/usr/local/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include"
-  cxx_builtin_include_directory: "/public/home/xwang/usr/local/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed"
-  cxx_builtin_include_directory: "/public/home/xwang/usr/local/include/c++/4.9.4"
+cxx_builtin_include_directory: "/public/home/xwang/usr/local/lib/gcc/x86_64-unknown-linux-gnu/4.9.4/include-fixed"
+cxx_builtin_include_directory: "/public/home/xwang/usr/local/include/c++/4.9.4"
 ```
 
 在 `cc_configure.bzl` 文件中，把所有 `"-B/usr/bin"` 替换为 `-B/public/home/xwang/usr/local/bin`
 
 编译 Bazel，在终端运行：
-``` shell
+
+```shell
 export EXTRA_BAZEL_ARGS='-s --verbose_failures --ignore_unsupported_sandboxing --genrule_strategy=standalone --spawn_strategy=standalone --jobs 4'
 ./compile.sh
 ```
+
 编译 Bazel 成功后，在 `output` 文件夹下复制名叫 `bazel` 的二进制文件到 `/public/home/xwang/usr/local/bin/`
 
 ### 编译 TensorFlow
 
 在 `/public/home/xwang/usr/cache/` 目录下运行：
-``` shell
+
+```shell
 git clone https://github.com/tensorflow/tensorflow.git && cd tensorflow
 ```
 
 需要修改 `third_party/gpus/crosstool/CROSSTOOL.tpl` 和 `third_party/gpus/crosstool/clang/bin/crosstool_wrapper_driver_is_not_gcc.tpl` 文件。
 
 首先更改 `third_party/gpus/crosstool/CROSSTOOL.tpl`，仅需要修改 "local_linux" 相关的 toolchain 代码块。类似于 Bazel 的修改，更改所有 binutils 和 cpp 工具的路径，但切记，不要修改 gcc 的路径。更改 linker flags 和 `cxx_builtin_include_directory`，修改后为如下效果：
-``` shell
+
+```shell
 tool_path { name: "ar" path: "/public/home/xwang/usr/local/bin/ar" }
 tool_path { name: "compat-ld" path: "/public/home/xwang/usr/local/bin/ld" }
 tool_path { name: "cpp" path: "/public/home/xwang/usr/local/bin/cpp" }
@@ -168,17 +187,21 @@ tool_path { name: "strip" path: "/public/home/xwang/usr/local/bin/strip" }
 修改 `third_party/gpus/crosstool/clang/bin/crosstool_wrapper_driver_is_not_gcc.tpl` 文件，修改第54行为 `LLVM_HOST_COMPILER_PATH = ('/public/home/xwang/usr/local/bin/gcc')`；注释掉 232 行 `cmd = 'PATH=' + PREFIX_DIR + ' ' + cmd`
 
 修改 `configure` 文件，把 `bazel clean --expunge` 改为 `bazel clean --expunge_async`。然后终端运行：
-``` shell
+
+```shell
 export GCC_HOST_COMPILER_PATH=/public/home/xwang/usr/local/bin/gcc
 export TEST_TMPDIR=/public/home/xwang/.cache/bazel
 ./configure
 ```
+
 在 Configuration 过程中，选择默认检测到的 Python 路径，不需要 CUDA 支持。Bazel 会下载编译 TensorFlow 所需要的所有依赖，如果 `configure` 成功，则显示如下：
-``` shell
+
+```shell
 INFO: All external dependencies fetched successfully.
 ```
 
 修改 `/public/home/xwang/.cache/bazel/_bazel_xwang/HashCodeShownAsAbove/external/protobuf/protobuf.bzl` 文件。寻找文件中的 `ctx.action` 代码块，添加一行 `use_default_shell_env=True` 得到如下结果：
+
 ```
 ctx.action(
         inputs=inputs,
@@ -191,11 +214,14 @@ ctx.action(
 ```
 
 编译。终端中运行：
-``` shell
+
+```shell
 bazel build -c opt -s --verbose_failures --define=use_fast_cpp_protos=true --ignore_unsupported_sandboxing --genrule_strategy=standalone --spawn_strategy=standalone --jobs 4 --linkopt '-lrt -lm' //tensorflow/tools/pip_package:build_pip_package
 ```
+
 经过较长时间的编译（一般十几分钟），成功的编译得到如下结果：
-``` shell
+
+```shell
 Target //tensorflow/tools/pip_package:build_pip_package up-to-date:
   bazel-bin/tensorflow/tools/pip_package/build_pip_package
 ```
@@ -203,16 +229,19 @@ Target //tensorflow/tools/pip_package:build_pip_package up-to-date:
 ### TensorFlow 编译后安装
 
 终端中运行：
-``` shell
+
+```shell
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /public/home/xwang/tensorflow_pkg
 pip install /public/home/xwang/tensorflow_pkg/*
 ```
+
 即可。
 
 ### 虚拟机中文件的打包与上传到集群
 
 在 `/public/home/xwang/` 目录下，终端运行：
-``` shell
+
+```shell
 tar -chjvf anaconda2.tar.bz2 anaconda2
 cd .cache
 tar -chjvf bazel.tar.bz2 bazel
@@ -221,10 +250,12 @@ tar -chjvf tensorflow.tar.bz2 tensorflow
 cd /public/home/xwang/usr
 tar -chjvf local.tar.bz2 local
 ```
+
 把 anaconda2.tar.bz2, bazel.tar.bz2, tensorflow.tar.bz2 和 local.tar.bz2 分别上传到集群的对应位置，解压即可。
 
 随后编辑集群上的 `~/.basgrc` 文件，上面应有如下几行：
-``` shell
+
+```shell
 # added by Anaconda2 4.2.0 installer
 export PATH="/public/home/xwang/anaconda2/bin:$PATH"
 
@@ -240,10 +271,11 @@ export LIBRARY_PATH=/public/home/xwang/usr/local/lib:/public/home/xwang/usr/loca
 ```
 
 至此，TensorFlow 编译安装完成。测试是否安装成功，成功的话应有类似结果：
-``` shell
+
+```shell
 [xwang@node2 ~]$ python
 ```
-``` python
+```python
 Python 2.7.13 |Anaconda custom (64-bit)| (default, Dec 20 2016, 23:09:15) 
 [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
