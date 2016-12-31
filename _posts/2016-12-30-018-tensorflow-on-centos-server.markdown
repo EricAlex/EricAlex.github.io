@@ -124,7 +124,7 @@ cxx_builtin_include_directory: "/public/home/xwang/usr/local/lib/gcc/x86_64-unkn
 cxx_builtin_include_directory: "/public/home/xwang/usr/local/include/c++/4.9.4"
 ```
 
-在 `cc_configure.bzl` 文件中，把所有 `"-B/usr/bin"` 替换为 `-B/public/home/xwang/usr/local/bin`
+在 `cc_configure.bzl` 文件中，把所有 `"-B/usr/bin"` 替换为 `"-B/public/home/xwang/usr/local/bin"`
 
 编译 Bazel，在终端运行：
 
